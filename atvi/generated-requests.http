@@ -1,0 +1,234 @@
+###
+POST http://localhost:8082/cliente/cadastro
+Content-Type: application/json
+
+{
+  "nome": "Maria da Silva",
+  "dataCadastro": "2024-11-27T10:00:00",
+  "dataNascimento": "1990-03-25",
+  "nomeSocial": "Maria",
+  "telefones": [
+    {
+      "ddd": "11",
+      "numero": "987654321"
+    },
+    {
+      "ddd": "21",
+      "numero": "998765432"
+    }
+  ],
+  "endereco": {
+    "estado": "São Paulo",
+    "cidade": "São Paulo",
+    "bairro": "Pinheiros",
+    "rua": "Rua dos Pinheiros",
+    "numero": "123",
+    "codigoPostal": "05422000",
+    "informacoesAdicionais": "Apartamento 101"
+  },
+  "documentos": [
+    {
+      "tipo": "RG",
+      "numero": "98765432"
+    },
+    {
+      "tipo": "CPF",
+      "numero": "12345678909"
+    }
+  ]
+}
+
+###
+POST http://localhost:8082/cliente/cadastro
+Content-Type: application/json
+
+{
+  "nome": "João Pereira",
+  "dataCadastro": "2024-11-27T11:00:00",
+  "dataNascimento": "1985-07-15",
+  "nomeSocial": "João",
+  "telefones": [
+    {
+      "ddd": "31",
+      "numero": "912345678"
+    }
+  ],
+  "endereco": {
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "bairro": "Savassi",
+    "rua": "Rua Paraíba",
+    "numero": "456",
+    "codigoPostal": "30140071",
+    "informacoesAdicionais": "Sala comercial 302"
+  },
+  "documentos": [
+    {
+      "tipo": "RG",
+      "numero": "12345678"
+    },
+    {
+      "tipo": "CPF",
+      "numero": "98765432100"
+    }
+  ]
+}
+
+###
+POST http://localhost:8082/cliente/cadastro
+Content-Type: application/json
+
+{
+    "nome": "Ana Beatriz Costa",
+    "dataCadastro": "2024-11-26T15:00:00",
+    "dataNascimento": "1995-11-10",
+    "nomeSocial": "Bia",
+    "telefones": [
+      {
+        "ddd": "41",
+        "numero": "999887766"
+      }
+    ],
+    "endereco": {
+      "estado": "Paraná",
+      "cidade": "Curitiba",
+      "bairro": "Centro",
+      "rua": "Avenida Sete de Setembro",
+      "numero": "890",
+      "codigoPostal": "80060100",
+      "informacoesAdicionais": "Prédio empresarial"
+    },
+    "documentos": [
+      {
+        "tipo": "RG",
+        "numero": "45678912"
+      },
+      {
+        "tipo": "CPF",
+        "numero": "87654321012"
+      }
+    ]
+}
+
+###
+POST http://localhost:8082/cliente/cadastro
+Content-Type: application/json
+
+{
+  "nome": "Carlos Eduardo Silva",
+  "dataCadastro": "2024-11-27T12:30:00",
+  "dataNascimento": "1980-05-20",
+  "nomeSocial": "Cadu",
+  "telefones": [
+    {
+      "ddd": "61",
+      "numero": "998877665"
+    },
+    {
+      "ddd": "62",
+      "numero": "912345678"
+    }
+  ],
+  "endereco": {
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "bairro": "Asa Norte",
+    "rua": "SQN 303",
+    "numero": "Bloco C",
+    "codigoPostal": "70730030",
+    "informacoesAdicionais": "Apartamento 102"
+  },
+  "documentos": [
+    {
+      "tipo": "RG",
+      "numero": "87654321"
+    },
+    {
+      "tipo": "CPF",
+      "numero": "65432109876"
+    }
+  ]
+}
+
+###
+GET http://localhost:8082/cliente/cliente/1
+
+<> 2024-11-27T020129.200.json
+<> 2024-11-27T015447.200.json
+<> 2024-11-27T015413.200.json
+
+###
+GET http://localhost:8082/cliente/cliente/2
+
+###
+GET http://localhost:8082/cliente/clientes
+
+
+###
+DELETE http://localhost:8082/cliente/excluir
+Content-Type: application/json
+
+{
+  "id": 3
+
+}
+
+###
+GET http://localhost:8082/cliente/cliente/3
+
+###
+PUT http://localhost:8082/cliente/atualizar
+Content-Type: application/json
+
+{
+  "id": 4,
+  "nome": "Pedro Silva e Silva",
+  "dataNascimento": "1980-05-15",
+  "nomeSocial": "Pedrão",
+  "telefones": [
+    {
+      "ddd": "31",
+      "numero": "987654321"
+    }
+  ],
+  "endereco": {
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "bairro": "Savassi",
+    "rua": "Rua Paraíba",
+    "numero": "456",
+    "codigoPostal": "30140071",
+    "informacoesAdicionais": "Apartamento 201"
+  },
+  "documentos": [
+    {
+      "tipo": "RG",
+      "numero": "98765432"
+    },
+    {
+      "tipo": "CPF",
+      "numero": "12345678909"
+    }
+  ]
+}
+
+###
+GET http://localhost:8082/cliente/cliente/4
+
+<> 2024-11-27T015612.200.json
+
+###
+GET http://localhost:8082/telefone/telefones
+
+<> 2024-11-27T020120.200.json
+
+###
+
+PUT http://localhost:8082/telefone/atualizar
+Content-Type: application/json
+
+{
+  "id": 1,
+  "ddd": "31",
+  "numero": "981234576"
+}
